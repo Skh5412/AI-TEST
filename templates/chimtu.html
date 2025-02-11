@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Chimtu AI</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+    <script>
+        function loading(){
+            $("#loading").show();
+            $("#content").hide();       
+        }
+    </script>
+
+    <style>
+        body {
+            background-color: #cccccc;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+        }
+        .btn-mic {
+            font-size: 24px;
+            border-radius: 50%;
+            width: 80px;
+            height: 80px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+    </style>
+</head>
+<body>
+
+    <h1 class="text-center">Chimtu AI Voice Assistant</h1>
+
+    <form method="POST" action="/" enctype="multipart/form-data">    
+        <button type="submit" class="btn btn-primary btn-mic">
+            <i class="fa fa-microphone"></i>
+        </button>
+    </form>
+
+    <h2 class="text-center mt-3">Tap to Speak</h2>
+
+</body>
+</html>
